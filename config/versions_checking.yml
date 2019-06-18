@@ -1,0 +1,1 @@
+check_versions_for: ['ruby', 'rails', 'rake', 'bundler', 'capistrano', 'capistrano_ruby']

@@ -1,0 +1,5 @@
+Rails/CreateTableWithTimestamps:
+  Enabled: false
+
+Rails/ApplicationRecord:
+  Enabled: false
