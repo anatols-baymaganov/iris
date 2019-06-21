@@ -1,0 +1,13 @@
+<div class="form-group">
+  <label for="<%= subject %>"><%= subject.capitalize %></label>
+  <% current_ver = @versions_settings.find { |set| set.key == "#{subject}" }&.value %>
+  <select type="text" class="form-control" name="<%= subject %>" id="<%= subject %>">
+    <% @versions_settings.find { |set| set.key == "#{subject}_available_versions" }&.value.to_a.sort.each do |version| %>
+      <option value="<%= version %>" <%= "selected" if current_ver == version %>> <%= version %> </option>
+    <% end %>
+  </select>
+
+  <% @errors&.dig(subject.to_sym).to_a.each do |error| %>
+    <small id="<%= subject %>" class="form-text incorrect_field"><%= error.capitalize %></small>
+  <% end %>
+</div>

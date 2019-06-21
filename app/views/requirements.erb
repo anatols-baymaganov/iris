@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/application.css"/>
+  </head>
+  <body>
+    <div class="container requirements-page mt-5">
+      <div class="clearfix">
+        <h2 class="inline-block">Минимальные версии для проектов Enicad</h2>
+        <h2 class="float-right">
+          <a class="btn btn-info" href="/">Вернуться</a>
+        </h2>
+        <h2 class="float-right">
+          <form action="/load_versions" method="post">
+            <button type="submit" class="btn btn-info mr-1 load-versions-btn">
+              <span class="spinner spinner-border spinner-border-sm" hidden></span>
+              Подтянуть версии из Internet
+            </button>
+          </form>
+        </h2>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <form action="/requirements" method="post">
+                <input type="hidden" value="patch" name="_method">
+                <% VersionsCheckingConfig.check_versions_for.each do |key| %>
+                  <%= partial(:requirement_field, locals: { subject: key }) if @requirements[key].present? %>
+                <% end %>
+                <button type="submit" class="btn btn-primary">Сохранить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay"></div>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/application.js"></script>
+  </body>
+</html>

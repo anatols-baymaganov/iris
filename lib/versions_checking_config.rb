@@ -2,6 +2,10 @@
 
 class VersionsCheckingConfig
   class << self
+    def rails_dependency
+      config.fetch("rails_dependency").clone
+    end
+
     def check_versions_for
       config.fetch("check_versions_for").clone
     end
