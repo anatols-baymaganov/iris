@@ -3,3 +3,6 @@ Rails/CreateTableWithTimestamps:
 
 Rails/ApplicationRecord:
   Enabled: false
+
+Rails/Output:
+  Enabled: false

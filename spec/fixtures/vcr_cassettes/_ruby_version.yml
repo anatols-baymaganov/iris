@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://10.12.0.69:6060/api/v4/projects/95/repository/files/.ruby-version?ref=master
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Private-Token:
+      - 3Ayj_Aq1HtqwrazkC2ui
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Length:
+      - '374'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 26 Jun 2019 16:06:06 GMT
+      Etag:
+      - W/"06d2bc3cd867cb87e43961568ae3f780"
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Gitlab-Blob-Id:
+      - 79a614418f747a2c5e6c8a8a4c42d12e16b06607
+      X-Gitlab-Commit-Id:
+      - 4e134d9a5ebfb60c4d4f82b5e224cfa4cba96700
+      X-Gitlab-Content-Sha256:
+      - 9ecc8cb252b269596adeed39e2636ff205ca8235b44a3db8212d03255fd55c0b
+      X-Gitlab-Encoding:
+      - base64
+      X-Gitlab-File-Name:
+      - ".ruby-version"
+      X-Gitlab-File-Path:
+      - ".ruby-version"
+      X-Gitlab-Last-Commit-Id:
+      - 34f850ff4afb4886a9a0ae69846bd6305ad33ec3
+      X-Gitlab-Ref:
+      - master
+      X-Gitlab-Size:
+      - '6'
+      X-Request-Id:
+      - vDugxrc9lk5
+      X-Runtime:
+      - '0.084076'
+    body:
+      encoding: UTF-8
+      string: '{"file_name":".ruby-version","file_path":".ruby-version","size":6,"encoding":"base64","content_sha256":"9ecc8cb252b269596adeed39e2636ff205ca8235b44a3db8212d03255fd55c0b","ref":"master","blob_id":"79a614418f747a2c5e6c8a8a4c42d12e16b06607","commit_id":"4e134d9a5ebfb60c4d4f82b5e224cfa4cba96700","last_commit_id":"34f850ff4afb4886a9a0ae69846bd6305ad33ec3","content":"Mi40LjQK"}'
+    http_version: 
+  recorded_at: Wed, 26 Jun 2019 16:06:06 GMT
+recorded_with: VCR 5.0.0
