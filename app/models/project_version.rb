@@ -4,5 +4,5 @@ class ProjectVersion < ActiveRecord::Base
   belongs_to :project
 
   validates :key, presence: true, uniqueness: { scope: :project_id }
-  validates :value, version_format: true, if: -> { value.present? }
+  validates :value, version_format: true, version_existence: true, if: -> { value.present? }
 end

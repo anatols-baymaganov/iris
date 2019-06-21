@@ -3,6 +3,7 @@
 module FactoryBot
   module Helper
     def self.init_requirements(versions = {})
+      VCR.use_cassette("available_versions_list") { AvailableVersionsUpdater.update }
       VersionsSettings.update_requirements({
                                              ruby:       versions[:ruby] || "2.3.3",
                                              rails:      versions[:rails] || "4.2.11.1",

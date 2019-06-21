@@ -3,6 +3,7 @@
 class VersionsSettings < ActiveRecord::Base
   validates :key, presence: true, uniqueness: true
   validates :value, version_format: true
+  validates :value, version_existence: true, if: -> { value.is_a?(String) }
 
   serialize :value
 

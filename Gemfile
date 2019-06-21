@@ -4,6 +4,7 @@ source "http://rubygems.org"
 
 gem "dotenv"
 gem "faraday"
+gem "nokogiri"
 gem "puma"
 gem "rake"
 gem "require_all"
