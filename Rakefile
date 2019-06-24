@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "enicad_styling"
+require "enicad_styling" if ENV["RACK_ENV"] == "development"
 require "sinatra/activerecord/rake"
 require "dotenv/load"
 
