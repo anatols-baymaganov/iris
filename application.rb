@@ -42,6 +42,10 @@ module Iris
       json DataTablesService.new(params).json
     end
 
+    get "/metric" do
+      ApplicationMetricsBuilder.last_successful_update
+    end
+
     get "/requirements" do
       erb(:requirements)
     end
