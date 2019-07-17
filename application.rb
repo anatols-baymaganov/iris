@@ -34,6 +34,10 @@ module Iris
       erb(:root)
     end
 
+    get "/status.json" do
+      json status: ApplicationStatusChecker.application_status
+    end
+
     get "/versions.json" do
       json DataTablesService.new(params).json
     end
