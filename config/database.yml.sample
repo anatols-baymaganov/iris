@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: <%= ENV["POSTGRES_HOST"] %>
+  port: <%= ENV["POSTGRES_PORT"] %>
+  username: <%= ENV["POSTGRES_USER"] %>
+  password: <%= ENV["POSTGRES_PASSWORD"]%>
+  pool: <%= ENV.fetch("POSTGRES_POOL") { 5 } %>
+
+production:
+  <<: *default
+  database: iris_production
+
+development:
+  <<: *default
+  database: iris_development
+
+test:
+  <<: *default
+  database: iris_test

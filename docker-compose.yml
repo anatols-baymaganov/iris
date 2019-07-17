@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  iris:
+    build:
+      context: .
+    command: ['puma', '-C', 'config/puma.rb']
+    environment:
+      RACK_ENV: production
+      IRIS_APP_PORT: 3000
+    volumes:
+      - ./:/iris
+    links:
+      - postgres
+    ports:
+      - "${IRIS_APP_PORT}:${IRIS_APP_PORT}"
+
+  postgres:
+    image: postgres:10-alpine

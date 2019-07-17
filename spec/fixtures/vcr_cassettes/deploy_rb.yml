@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://10.12.0.69:6060/api/v4/projects/95/repository/files/config%2Fdeploy.rb?ref=master
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Private-Token:
+      - 3Ayj_Aq1HtqwrazkC2ui
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Length:
+      - '3056'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 26 Jun 2019 16:06:07 GMT
+      Etag:
+      - W/"9a84bef207eed7c5afdfd1672f342421"
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Gitlab-Blob-Id:
+      - 2108d5eb807881277f0a80b45906aad8fdbc5fa7
+      X-Gitlab-Commit-Id:
+      - 4e134d9a5ebfb60c4d4f82b5e224cfa4cba96700
+      X-Gitlab-Content-Sha256:
+      - 48bbaf8f6cb8edd3104ff3a73ed53edc58a546a53c8f68807be65548134138dc
+      X-Gitlab-Encoding:
+      - base64
+      X-Gitlab-File-Name:
+      - deploy.rb
+      X-Gitlab-File-Path:
+      - config/deploy.rb
+      X-Gitlab-Last-Commit-Id:
+      - bfc758d9a87e43ccc28d54a79c948f1c1b005f45
+      X-Gitlab-Ref:
+      - master
+      X-Gitlab-Size:
+      - '2014'
+      X-Request-Id:
+      - iiOUTp1Usr6
+      X-Runtime:
+      - '0.053468'
+    body:
+      encoding: UTF-8
+      string: '{"file_name":"deploy.rb","file_path":"config/deploy.rb","size":2014,"encoding":"base64","content_sha256":"48bbaf8f6cb8edd3104ff3a73ed53edc58a546a53c8f68807be65548134138dc","ref":"master","blob_id":"2108d5eb807881277f0a80b45906aad8fdbc5fa7","commit_id":"4e134d9a5ebfb60c4d4f82b5e224cfa4cba96700","last_commit_id":"bfc758d9a87e43ccc28d54a79c948f1c1b005f45","content":"IyBjb25maWcgdmFsaWQgb25seSBmb3IgY3VycmVudCB2ZXJzaW9uIG9mIENhcGlzdHJhbm8KbG9jayAnMy44LjInCgpzZXQgOmFwcGxpY2F0aW9uLCAndHZwLWFkbWluJwpzZXQgOnJlcG9fdXJsLCAnZ2l0QGdpdGxhYi5lbmljYWQuY29tOnR2ZnJvbnQvdHZwLWFkbWluLmdpdCcKc2V0IDpydm1fcnVieV92ZXJzaW9uLCAncnVieS0yLjQuNCcKc2V0IDpzc2hfb3B0aW9ucywgeyBmb3J3YXJkX2FnZW50OiB0cnVlIH0KIyBzZXQgOnB0eSwgdHJ1ZQoKc2V0IDpkZXBsb3ltZW50X3VzZXIsIC0+IHsgZmV0Y2goOnVzZXIpIH0Kc2V0IDpkZXBsb3lfdG8sIC0+IHsgIi9ob21lLyN7ZmV0Y2goOmRlcGxveW1lbnRfdXNlcil9LyN7ZmV0Y2goOmFwcGxpY2F0aW9uKX0iIH0Kc2V0IDpicmFuY2gsIEVOVlsnQlJBTkNIJ10gfHwgJ3Byb2R1Y3Rpb24nCgpzZXQgOmZvcm1hdCwgOmFpcmJydXNzaApzZXQgOmtlZXBfcmVsZWFzZXMsIDUKCnNldCA6cmFpbHNfZW52LCAnc3RhZ2luZycgIyB1c3VhbGx5IG92ZXJyaWRkZW4gaW4gc3RhZ2UgY29uZmlnCgpzZXQgOmFzc2V0c19yb2xlcywgWzp3ZWJdCnNldCA6bWlncmF0aW9uX3JvbGUsIDphcHAKCiMgWFhYINGH0LDRgdGC0LjRh9C90L4g0LrQsNGC0LDQu9C+0LPQuCDQu9C40L3QutGD0Y7RgtGB0Y8g0LjQtyBkZXBsb3k6c3ltbGluazp0dnBfdGlua19maWxlcywg0YLQsNC6INC60LDQuiDQvdC1INGB0L7QvtGC0LLQtdGC0YHRgtGD0Y7RggojINC60L7QvdCy0LXQvdGG0LjQuCDQuNC80LXQvdC+0LLQsNC90LjRjy4g0JrQvtCz0LTQsC3QvdC40LHRg9C00Ywg0L3QsNC30LLQsNC90LjRjyDQutCw0YLQsNC70L7Qs9C+0LIg0L3Rg9C20L3QviDQsdGD0LTQtdGCINC/0YDQuNCy0LXRgdGC0Lgg0Log0LLQuNC00YMsINC/0YDQuNCz0L7QtNC90L7QvNGDINC00LvRjwojINGD0LrQsNC30LDQvdC40Y8g0LfQtNC10YHRjCwg0LAg0LrQvtGB0YLRi9C70Ywg0YPQsdGA0LDRgtGMLgphcHBlbmQgOmxpbmtlZF9kaXJzLCAnbG9nJywgJ3RtcCcKCmFwcGVuZCA6YnVuZGxlX2JpbnMsICd1bmljb3JuJwphcHBlbmQgOnJ2bV9tYXBfYmlucywgJ3VuaWNvcm4nCgphZnRlciAnZGVwbG95OnB1Ymxpc2hlZCcsICdkZXBsb3k6c3RhcnQnCgpiZWZvcmUgJ2RlcGxveTpjb21waWxlX2Fzc2V0cycsICdkZXBsb3k6ZGI6ZW5zdXJlX3NjaGVtYV91bmNoYW5nZWQnCgpuYW1lc3BhY2UgOmRlcGxveSBkbwogIGRlc2MgJ0RlcGxveSBmb3J3YXJkLWNvbXBhdGlibGUgbWlncmF0aW9ucyB3aXRob3V0IG1haW50ZW5hbmNlIG1vZGUnCiAgdGFzayA6ZmFzdG1pZ3JhdGlvbnMgZG8KICAgIFJha2U6OlRhc2tbJ2RlcGxveTpkYjplbnN1cmVfc2NoZW1hX3VuY2hhbmdlZCddLmNsZWFyCiAgICBiZWZvcmUgJ2RlcGxveTpjb21waWxlX2Fzc2V0cycsICdkZXBsb3k6ZGI6bWlncmF0ZScKICAgIGludm9rZSAnZGVwbG95JwogIGVuZAoKICBkZXNjICdDb21wbGV0ZSBkZXBsb3kgd2l0aCBtaWdyYXRpb25zIGFuZCBtYWludGVuYW5jZSBtb2RlJwogIHRhc2sgOmxhcmdlIGRvCiAgICBiZWZvcmUgJ2RlcGxveTpkYjptaWdyYXRlJywgJ2RlcGxveTp3ZWI6ZGlzYWJsZScKICAgIGFmdGVyICdkZXBsb3k6d2ViOmRpc2FibGUnLCAndW5pY29ybjpzdG9wJwogICAgYWZ0ZXIgJ3VuaWNvcm46c3RhcnQnLCAnZGVwbG95OndlYjplbmFibGUnCiAgICBpbnZva2UgJ2RlcGxveTpmYXN0bWlncmF0aW9ucycKICBlbmQKCiAgZGVzYyAnUGVyZm9ybSAwZG93bnRpbWUgcmVzdGFydCcKICB0YXNrIDpyZXN0YXJ0IGRvCiAgICBpbnZva2UgJ3VuaWNvcm46cmVzdGFydCcKICBlbmQKCiAgdGFzayA6c3RhcnQgZG8KICAgIGludm9rZSAndW5pY29ybjpzdGFydCcKICBlbmQKZW5kCgp0YXNrIDpyZWJvb3QgZG8KICBiZWZvcmUgJ3VuaWNvcm46c3RvcCcsICdkZXBsb3k6d2ViOmRpc2FibGUnCiAgYWZ0ZXIgJ3VuaWNvcm46c3RhcnQnLCAnZGVwbG95OndlYjplbmFibGUnCgogIGludm9rZSAndW5pY29ybjpzdG9wJwogIGludm9rZSAndW5pY29ybjpzdGFydCcKZW5kCg=="}'
+    http_version: 
+  recorded_at: Wed, 26 Jun 2019 16:06:07 GMT
+recorded_with: VCR 5.0.0

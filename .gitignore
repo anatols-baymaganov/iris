@@ -1,0 +1,14 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/tmp/
+/log/
+.env
+/config/database.yml
+/db/*.sqlite3
+
+.rubocop.yml
+.overcommit.yml
