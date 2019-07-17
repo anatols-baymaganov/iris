@@ -67,11 +67,10 @@
 
 **C docker-compose**
 
-    cp compose/docker-compose.development.yml docker-compose.yml 
-    docker-compose run iris bundle exec rake db:create
-    docker-compose run iris bundle exec rake db:migrate
-    docker-compose run iris bundle exec rake db:seed
-    docker-compose run iris bundle exec rake collect_projects_info
+    docker-compose run --rm iris rake db:create
+    docker-compose run --rm iris rake db:migrate
+    docker-compose run --rm iris rake db:seed
+    docker-compose run --rm iris rake collect_projects_info
     docker-compose up
 
 # Сбор информации по проектам

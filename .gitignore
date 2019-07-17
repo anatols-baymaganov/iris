@@ -11,5 +11,3 @@
 
 .rubocop.yml
 .overcommit.yml
-
-docker-compose.yml

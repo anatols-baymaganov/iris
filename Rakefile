@@ -2,7 +2,6 @@
 
 require "enicad_styling" if ENV["RACK_ENV"] == "development"
 require "sinatra/activerecord/rake"
-require "dotenv/load"
 
 require File.expand_path("application.rb", __dir__)
 

@@ -5,7 +5,6 @@ ENV["RACK_ENV"] = "test"
 require File.expand_path("../application.rb", __dir__)
 require File.expand_path("factory_bot_helper.rb", __dir__)
 
-require "dotenv/load"
 require "database_cleaner"
 require "factory_bot"
 require "faker"

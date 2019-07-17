@@ -5,6 +5,7 @@ source "http://rubygems.org"
 gem "dotenv"
 gem "faraday"
 gem "nokogiri"
+gem "pg"
 gem "puma"
 gem "rake"
 gem "require_all"
@@ -12,7 +13,6 @@ gem "ruby-progressbar", require: false
 gem "sinatra", require: false
 gem "sinatra-activerecord", require: false
 gem "sinatra-contrib", require: false
-gem "sqlite3"
 
 group :development do
   gem "enicad_styling", source: "http://gems.teka.tech"

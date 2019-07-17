@@ -5,11 +5,16 @@ LABEL Description="Сервис информации о версиях Ruby и R
       Vendor="Enicad" \
       Version="1.0"
 
-RUN apk --update add --no-cache alpine-sdk sqlite-dev
+RUN apk --update add --no-cache alpine-sdk postgresql-libs libpq postgresql-dev
 
 WORKDIR /iris
 
 ADD Gemfile* ./
 
-RUN gem install bundler
-RUN bundle install
+RUN gem install bundler --no-doc
+RUN bundle install --without development test
+
+COPY . .
+COPY config/database.yml.sample config/database.yml
+
+ENTRYPOINT ["./bin/entrypoint"]

@@ -12,8 +12,11 @@
 
 ActiveRecord::Schema.define(version: 2019_06_18_110527) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "project_versions", force: :cascade do |t|
-    t.integer "project_id"
+    t.bigint "project_id"
     t.string "key", null: false
     t.string "value"
     t.index ["project_id", "key"], name: "index_project_versions_on_project_id_and_key", unique: true
@@ -36,4 +39,5 @@ ActiveRecord::Schema.define(version: 2019_06_18_110527) do
     t.index ["key"], name: "index_versions_settings_on_key", unique: true
   end
 
+  add_foreign_key "project_versions", "projects"
 end
