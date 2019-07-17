@@ -5,6 +5,7 @@
 /doc/
 /pkg/
 /tmp/
+/log/
 .env
 /config/database.yml
 /db/*.sqlite3

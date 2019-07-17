@@ -8,7 +8,7 @@ class GitlabApi
       @status = status
       @response_headers = response_headers
 
-      super("Status: #{status}\nHeaders: #{response_headers}")
+      super("bad response from gitlab\nStatus: #{status}\nHeaders: #{response_headers}")
     end
   end
 

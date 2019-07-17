@@ -9,6 +9,8 @@ require File.expand_path("lib/require_libs.rb", __dir__)
 
 module Iris
   class Application < ::Sinatra::Base
+    include IrisLogger
+
     set :views, -> { File.join(root, "app/views") }
     set :method_override, true
 
